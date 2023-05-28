@@ -1,0 +1,49 @@
+.container{
+  background-color: #efefef;
+}
+
+.content{
+  margin-bottom: 50px;
+}
+
+.profile-img{
+  width: 250px;
+  border-radius: 50%;
+
+}
+.social-medias{
+  margin: 30px;
+}
+.social-media-link{
+  width: 50px;
+  margin-right: 10px;
+}
+
+.boring-btn{
+  background-color: white;
+  font-weight: bold;
+  width: 100px;
+  height: 55px;
+  border: solid 1px black;
+  margin-right: 10px;
+}
+
+.boring-btn-black{
+  color: white;
+  width: 150px;
+  height: 50px;
+  background-color: #8e8e8e;
+  border-color: black;
+}
+
+.skill-card{
+  padding: 30px 30px;
+  border: solid black;
+  margin: 10px 0px;
+}
+
+.skill-img{
+  height: 70px;
+  margin: 0px 20px 10px 20px;
+
+}
