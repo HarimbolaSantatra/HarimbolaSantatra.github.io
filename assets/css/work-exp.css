@@ -12,6 +12,7 @@
 .work-toggle.active {
   background-color: #4b6cc7;
   transition: background-color 0.4s linear;
+  color: white;
 }
 
 .work-toggle.inactive {
@@ -23,16 +24,45 @@
   background-color: #acb1d6;
   padding: 10px 20px;
   border-radius: 7px;
+  transform-origin: top;
 }
 
 .work-text.hide {
   margin-top: 0;
   max-height: 0;
+  transform-origin: top;
   transform: scaleY(0);
+  animation: 0.6s linear hideAnimation;
+  transition: max-height 0.3s ease-out;
 }
 
 .work-text.show {
   margin-top: 6px;
   max-height: 9999px;
   transform: scaleY(1);
+  animation: 0.6s linear showAnimation;
+  transition: max-height 0.3s ease-in;
+}
+
+@keyframes showAnimation {
+  from {
+    margin-top: 0px;
+    transform: scaleY(0);
+  }
+  75% {
+    max-height: 9999px;
+  }
+  to {
+    margin-top: 6px;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes hideAnimation {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
 }
