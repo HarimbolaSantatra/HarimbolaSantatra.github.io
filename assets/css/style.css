@@ -13,11 +13,68 @@ a:hover{
 }
 
 .container {
-  background-color: #efefef;
+  background-color: #ffead2;
 }
 
 .content {
   margin-bottom: 50px;
+}
+
+/* ------ HEADER ------- */
+
+nav{
+  background-color: #8294c4;
+  color: white;
+  font-size: larger;
+  padding: 15px;
+  text-align: center;
+  justify-content: center;
+}
+
+#header-menu{
+  list-style: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-item{
+  margin: 0 20px;
+}
+
+.header-link {
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+}
+
+.header-link:hover{
+  color:#ced7ed;
+}
+
+.header-link::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.header-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* ------ ABOUT ------- */
+#about{
+  margin-top: 30px;
 }
 
 .profile-img {
