@@ -7,15 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/project.css">
-    <link rel="stylesheet" href="assets/css/work-exp.css">
-    <link rel="stylesheet" href="assets/css/contact.css">
 </head>
 
 <body>
     <div class="container">
 
-        <nav class="header">
+        <nav id="header">
             <ul id="header-menu">
                 <li class="header-item">
                     <a class="header-link" href="#about">About</a>
@@ -38,11 +35,11 @@
             </ul>
         </nav>
 
-        <div id="about" class="row content">
-            <div class="row">
-                <div class="col-md-4"><img src="assets/img/profil.jpeg" alt="my-picture" class="profile-img"></div>
-                <div class="col-md-8">
-                    <div class="col-12">
+        <div id="about" class="content">
+            <div class="">
+                <div class=""><img src="assets/img/profil.jpeg" alt="my-picture" class="profile-img"></div>
+                <div class="">
+                    <div class="">
                         <p class="h4">Harimbola Santatra</p>
                         <p>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, possimus modi. Ut,
@@ -67,9 +64,9 @@
                         <img class="social-media-link" src="assets/img/github.png">
                     </div>
                     <div class="col-12 text-center links-btn-group">
-                        <button class="boring-btn">Skills</button>
-                        <button class="boring-btn">Projects</button>
-                        <button class="boring-btn boring-btn-black">
+                        <button class="boring-btn boring-btn-primary">Skills</button>
+                        <button class="boring-btn boring-btn-primary">Projects</button>
+                        <button class="boring-btn boring-btn-secondary">
                             <img src="assets/img/pdf.png" alt="pdf-logo" height="35" />
                             Resume
                         </button>
@@ -125,7 +122,7 @@
 
         <div id="project" class="content">
             <h1 class="title">Projects</h1>
-            <div class="project-box">
+            <div class="box project-box">
                 <div class="project-desc">
                     <div class="project-title"> Chat Application </div>
                     <div class="project-body">
@@ -217,26 +214,29 @@
             </div>
         </div>
 
-        <div id="contact" class="row content">
+        <div id="contact" class="content">
             <h1 class="title">Contact</h1>
-            <div class="text-center">
-                Have a particular project in mind, need a partener or just wanting to have a chat ? Let's get in touch !
+            <div class="box contact-box">
+                <div class="centered">
+                    Have a particular project in mind, need a partener or just wanting to have a chat ? Let's get in
+                    touch !
+                </div>
+                <form class="contact-form">
+                    <div class="input-group">
+                        <label for="contactName" class="form-label" >Name</label>
+                        <input type="text" class="form-input" id="contactName" placeholder="Name (Optional)">
+                    </div>
+                    <div class="input-group">
+                        <label for="contactEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-input" id="contactEmail" placeholder="example@email.com">
+                    </div>
+                    <div class="input-group">
+                        <label for="contactMessage" class="form-label">Message</label>
+                        <textarea class="form-input" id="contactMessage" placeholder="Your Message ..."></textarea>
+                    </div>
+                    <button type="submit" class="boring-btn boring-btn-light">Send</button>
+                </form>
             </div>
-            <form>
-                <div class="mb-3">
-                    <label for="contactName" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="contactName">
-                </div>
-                <div class="mb-3">
-                    <label for="contactEmail" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="contactEmail">
-                </div>
-                <div class="mb-3">
-                    <label for="contactMessage" class="form-label">Message</label>
-                    <textarea class="form-control" id="contactMessage"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send</button>
-            </form>
         </div>
     </div>
     <script src="assets/js/work.js"></script>
