@@ -14,10 +14,18 @@ a:hover{
 
 .container {
   background-color: #ffead2;
+  margin: 0 60px;
+  padding: 0 30px;
 }
 
 .content {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  justify-content: space-around;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
 }
 
 /* ------ HEADER ------- */

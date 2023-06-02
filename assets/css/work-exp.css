@@ -33,7 +33,7 @@
   transform-origin: top;
   transform: scaleY(0);
   animation: 0.6s linear hideAnimation;
-  transition: max-height 0.3s ease-out;
+  transition: max-height 0.1s linear;
 }
 
 .work-text.show {
@@ -41,7 +41,7 @@
   max-height: 9999px;
   transform: scaleY(1);
   animation: 0.6s linear showAnimation;
-  transition: max-height 0.3s ease-in;
+  transition: max-height 0.1s linear;
 }
 
 @keyframes showAnimation {
