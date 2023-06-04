@@ -3,6 +3,7 @@
   --bar-background: #323f4b;
   --box-grey-background: #7b8794;
   --box-brown-background: rgb(100, 82, 60);
+  --box-brown-hover: rgb(99, 95, 90);
   --mute-color: #616e7c;
   --primary-color: #ffdcb7;
   --info-color: #07ffc9;
@@ -126,9 +127,17 @@ a:hover {
   margin: 15px 0;
 }
 
-.social-media-link {
+.social-media-icon{
   width: 50px;
   margin-right: 10px;
+}
+
+.social-media-link {
+}
+
+.social-media-icon:hover{
+  transform: rotateZ('45deg');
+  transition: transform 0.3s linear;
 }
 
 .links-btn-group {
@@ -182,12 +191,31 @@ a:hover {
   border-color: black;
 }
 
-.skill-card {
-  padding: 30px 30px;
-  background-color: var(--box-brown-background);
-  margin: 10px 0px;
+/* ----------- SKILLS -------------- */
+.skills-body{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
+.skill-card {
+  max-width: 40%;
+  padding: 30px;
+  background-color: var(--box-brown-background);
+  margin: 10px 5px;
+  border-radius: 20px;
+}
+
+.skill-card:hover{
+  background-color: var(--box-brown-hover);
+  transition: background-color 0.3s linear;
+}
+
+.skill-card-header{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
 .skill-img {
   height: 70px;
   margin: 0px 20px 10px 20px;
