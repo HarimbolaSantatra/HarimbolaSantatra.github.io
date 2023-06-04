@@ -117,7 +117,7 @@ a:hover {
   border-radius: 50%;
 }
 
-#about-body{
+#about-body {
   margin: auto auto;
 }
 
@@ -127,17 +127,39 @@ a:hover {
   margin: 15px 0;
 }
 
-.social-media-icon{
+.social-media-icon {
   width: 50px;
   margin-right: 10px;
+  transform: rotateZ(0deg);
+  transition: transform 0.3s linear;
 }
 
 .social-media-link {
 }
 
-.social-media-icon:hover{
-  transform: rotateZ('45deg');
-  transition: transform 0.3s linear;
+.social-media-icon:hover {
+  animation: 0.5s sm-jiggle;
+}
+
+@keyframes sm-jiggle {
+  from {
+    transform: rotateZ(0deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  40% {
+    transform: rotateZ(-10deg);
+  }
+  60% {
+    transform: rotateZ(10deg);
+  }
+  80% {
+    transform: rotateZ(-10deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
 }
 
 .links-btn-group {
@@ -192,7 +214,7 @@ a:hover {
 }
 
 /* ----------- SKILLS -------------- */
-.skills-body{
+.skills-body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -206,12 +228,12 @@ a:hover {
   border-radius: 20px;
 }
 
-.skill-card:hover{
+.skill-card:hover {
   background-color: var(--box-brown-hover);
   transition: background-color 0.3s linear;
 }
 
-.skill-card-header{
+.skill-card-header {
   display: flex;
   justify-content: left;
   align-items: center;
