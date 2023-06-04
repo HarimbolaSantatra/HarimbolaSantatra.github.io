@@ -22,7 +22,7 @@ a {
 }
 
 a:hover {
-  color: inherit;
+  color: var(--text-one);
 }
 
 .container {
@@ -182,17 +182,26 @@ a:hover {
 }
 
 .boring-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
-  width: 80px;
+  width: 90px;
   height: 40px;
   border: solid 1px transparent;
-  border-radius: 20px;
+  border-radius: 10px;
   margin-right: 10px;
+  border: 2px solid transparent;
 }
 
 .boring-btn-primary {
   background-color: var(--primary-color);
   color: var(--dark-background);
+}
+
+.boring-btn-primary:hover {
+  color: black;
+  border-color: var(--box-grey-background);
 }
 
 .boring-btn-light {
