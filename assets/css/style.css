@@ -222,7 +222,7 @@ a:hover {
   border-color: black;
 }
 
-/* ----------- SKILLS -------------- */
+/* ----------- SKILL  S -------------- */
 .skills-body {
   display: flex;
   flex-wrap: wrap;
@@ -237,9 +237,9 @@ a:hover {
   border-radius: 20px;
 }
 
-.skill-card:hover {
-  background-color: var(--box-brown-hover);
-  transition: background-color 0.3s linear;
+.skill-card:hover{
+  color: var(--text-one);
+  transition: color 0.3s linear;
 }
 
 .skill-card-header {
@@ -247,9 +247,20 @@ a:hover {
   justify-content: left;
   align-items: center;
 }
+
+.skill-card-body{
+  color: #b3b4b4;
+  transition: color 0.3s linear;
+}
+
 .skill-img {
   height: 70px;
   margin: 0px 20px 10px 20px;
+}
+
+.skill-title{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
 }
 
 /* ----------- PROJECT -------------- */
