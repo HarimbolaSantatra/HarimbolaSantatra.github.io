@@ -460,3 +460,15 @@ a:hover {
 .form-input:focus {
   outline: var(--info-color) solid 2px;
 }
+
+/* INTERSECTION OBSERVER */
+.obs-hidden{
+  opacity: 0;
+  filter: blur(1px);
+  transition: all 1s;
+}
+
+.obs-show{
+  opacity: 1;
+  filter: blur(0);
+}
