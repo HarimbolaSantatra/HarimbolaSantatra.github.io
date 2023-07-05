@@ -352,7 +352,7 @@ a:hover {
   transition: border 0.3s ease-in-out;
 }
 
-.work-text {
+.dd-description {
   background-color: transparent;
   color: var(--light-color);
   padding: 10px 20px;
@@ -361,14 +361,14 @@ a:hover {
   border-radius: 7px;
 }
 
-.work-text.hide {
+.dd-description.hide {
   height: 0;
   margin: 0;
   padding: 0;
   visibility: hidden;
 }
 
-.work-text.show {
+.dd-description.show {
   height: 100%;
   visibility: visible;
 }
@@ -379,6 +379,39 @@ a:hover {
 
 .work-btn{
   margin-left: 50px;
+}
+
+.desc-header{
+  color: var(--mute-color);
+  margin-bottom: 15px;
+}
+
+.desc-header-item{
+  display: inline-flex;
+  margin-right: 25px;
+}
+
+.header-icon{
+  width: 30px;
+  margin-right: 15px;
+}
+
+.header-text{
+  align-self: center;
+}
+
+.desc-body{
+  padding-right: 30px;
+  margin-bottom: 30px;
+}
+
+.desc-footer{
+  margin-bottom: 25px;
+}
+
+.work-tag{
+  background-color: var(--active-link-color);
+  color: var(--dark-background);
 }
 
 /* ---------- CONTACT ----------  */
