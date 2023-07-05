@@ -336,6 +336,17 @@ a:hover {
   margin-bottom: 6px;
 }
 
+.education-box{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  color: var(--dark-background);
+  padding: 10px 20px;
+  margin-bottom: 6px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
 .work-toggle {
   display: flex;
   justify-content: space-between;
