@@ -1,16 +1,19 @@
-const toggleText = (btn) => {
-    const txtBox = btn.nextElementSibling;
-    if (txtBox.classList.contains('hide')) {
-        txtBox.classList.add('show');
-        txtBox.classList.remove('hide');
-        btn.classList.add('active');
-        btn.classList.remove('inactive');
+const toggleText = (workToggle) => {
+    const workText = workToggle.nextElementSibling;
+    const plusSign = workToggle.lastElementChild.lastElementChild;
+    if (workText.classList.contains('hide')) {
+        workText.classList.add('show');
+        workText.classList.remove('hide');
+        workToggle.classList.add('active');
+        workToggle.classList.remove('inactive');
+        plusSign.textContent = "-";
     }
     else {
-        txtBox.classList.add('hide');
-        txtBox.classList.remove('show');
-        btn.classList.add('inactive');
-        btn.classList.remove('active');
+        workText.classList.add('hide');
+        workText.classList.remove('show');
+        workToggle.classList.add('inactive');
+        workToggle.classList.remove('active');
+        plusSign.textContent = "+";
     }
 }
 
