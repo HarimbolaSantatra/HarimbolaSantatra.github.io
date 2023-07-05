@@ -327,6 +327,11 @@ a:hover {
 }
 
 /* ------ WORK EXPERIENCE ------ */
+.work-boxes{
+  width: 900px;
+  margin: auto;
+}
+
 .work-box {
   margin-bottom: 6px;
 }
