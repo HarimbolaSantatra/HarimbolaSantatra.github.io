@@ -269,20 +269,22 @@ a:hover {
 .project-box {
   height: 240px;
   display: flex;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
 .project-desc {
   display: block;
-  width: 66.33%;
+  width: 60%;
 }
 
 .project-image-container {
-  height: 100%;
-  text-align: center;
+  width: 40%;
+  overflow: hidden;
 }
 .project-image {
-  height: 100%;
-  width: auto;
+  width: 100%;
+  height: auto;
 }
 
 .project-title {
