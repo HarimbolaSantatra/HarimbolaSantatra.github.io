@@ -15,6 +15,7 @@
 
 html {
   color: var(--text-one);
+  scroll-behavior: smooth;
 }
 
 a {
