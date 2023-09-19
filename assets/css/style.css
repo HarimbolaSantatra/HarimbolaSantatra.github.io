@@ -357,6 +357,7 @@ a:hover {
   padding: 10px 20px;
   border-radius: 10px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .active {
@@ -436,6 +437,7 @@ a:hover {
 /* ---------- CONTACT ----------  */
 .contact-box {
   display: block;
+  padding: 20px 150px;
 }
 
 .contact-form {
