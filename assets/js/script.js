@@ -24,3 +24,21 @@ toggleBtns.forEach((toggleBtn) => {
     });
 });
 
+function toggleBurger () {
+  const mobileHeader = document.querySelector('#mobile-header');
+  if (mobileHeader.classList.contains('hide')) {
+    mobileHeader.classList.add('show');
+    mobileHeader.classList.remove('hide');
+  }
+  else {
+    mobileHeader.classList.add('hide');
+    mobileHeader.classList.remove('show');
+  }
+}
+
+const burgerToggles = document.querySelectorAll('.burger-toggle-btn'); 
+burgerToggles.forEach((burgerToggle) => {
+  burgerToggle.addEventListener('click', () => {
+    toggleBurger();
+  })
+});

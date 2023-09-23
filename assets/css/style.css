@@ -477,3 +477,149 @@ a:hover {
   opacity: 1;
   filter: blur(0);
 }
+
+.burger-toggle {
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+  height: 0;
+}
+
+.hide {
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.show {
+  visibility: visible;
+  margin: initial;
+  padding: initial;
+  height: initial;
+}
+
+#mobile-header {
+  position: fixed;
+  top:0;
+  left:0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bar-background);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#mobile-header > ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 ;
+}
+
+#mobile-header > ul > li {
+  margin: 18px 0;
+}
+
+/* MOBILE */
+@media ( max-width: 480px ) {
+
+  .container {
+    margin: 0 5px;
+  }
+
+  #header-menu {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+
+  .profile-img {
+    visibility: hidden;
+    overflow: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #burger-open-svg {
+    visibility: visible;
+  }
+
+  #burger-open-svg > path {
+    stroke: var(--info-color);
+  }
+
+
+  .burger-toggle-btn {
+    height: 75px;
+    width: auto;
+  }
+
+  .burger-toggle {
+    margin: initial;
+    padding: initial;
+  }
+
+  #burger-close-svg > path {
+    fill: var(--primary-color);
+  }
+
+  .skill-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+    margin: 6px 2px;
+  }
+
+  .skill-img {
+    height: 45px;
+    margin: 0px 5px 10px 5px;
+  }
+
+  .skill-title{
+    font-size: 1em;
+  }
+
+  .work-boxes {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .work-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .education-box{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .contact-box {
+    padding: 4px 25px;
+  }
+
+  .project-box {
+    flex-direction: column;
+    height: 350px;
+  }
+
+  .project-desc {
+    width: 100%;
+    margin-bottom: 10px ;
+  }
+
+  .project-image-container {
+    width: 100%;
+  }
+
+}
