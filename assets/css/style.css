@@ -234,7 +234,7 @@ a:hover {
 
 .skill-card {
   color: var(--dark-background);
-  max-width: 40%;
+  width: 40%;
   padding: 30px;
   background-color: var(--primary-color);
   margin: 10px 5px;
