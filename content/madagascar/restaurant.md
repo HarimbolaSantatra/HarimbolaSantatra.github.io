@@ -4,7 +4,7 @@ draft = false
 title = 'Restaurant'
 +++
 ## ⭐ Restaurants ⭐
-A list of the best spots in Madagascar 🍽️✨ restaurants, pubs, lounges, shooters & bars, food parks, *gargottes*, fast-food — basically anywhere the food is irresistibly good 🤤🥗 
+A list of the best spots in Madagascar: restaurants, pubs, lounges, shooters & bars, food parks, *gargottes*, fast-food — basically anywhere the food is irresistibly good 🤤 ✨
 
 ### Tags
 - Activity (Video game, bowling, etc) ♣️
